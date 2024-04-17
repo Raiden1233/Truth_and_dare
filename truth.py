@@ -1,7 +1,7 @@
 import random
 
 def t_question():
-   with open('t_question.txt', 'r') as f:
+   with open('t_question.txt', 'r', encoding='utf-8') as f:
       
       t_questions = f.readlines()
 
