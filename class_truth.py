@@ -2,9 +2,7 @@ import truth as t
 import Dare as d
 import discord
 
-def embed(titel, description):
-   em = discord.Embed(title =titel, description = description)
-   return em
+
 class Truth(discord.ui.View):
    def __init__(self, icon_url,name):
       super().__init__(timeout = None)
@@ -18,7 +16,7 @@ class Truth(discord.ui.View):
     
 
     # button.disabled = True
-    em = embed('Question',t.t_question())
+    em = discord.Embed(title= 'Question', description = t.t_question())
     em.set_author(name=f'requested by {self.name}',
                   icon_url= self.icon_url)
     
