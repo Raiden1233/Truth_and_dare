@@ -1,7 +1,7 @@
 import random
 
 def d_dare():
-   with open('d_dare.txt', 'r') as f:
+   with open('d_dare.txt', 'r', encoding='utf-8') as f:
       
       d_dare = f.readlines()
 
